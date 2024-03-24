@@ -26,7 +26,9 @@ export class SurveyorClass{
 	// Delete Surveyor
 	 delete="/html/body/div[1]/div/div/main/div/div/div[2]/div/div[1]/div[1]/div/table/tbody/tr/td[6]/div/button[2]"
 	 confirm_Delete="/html/body/div[4]/div/div/div/div[2]/section/div[2]/div/button[2]/div/span"	
-
+     msg1="Successfully added Surveyor"
+     msg2="Successfully updated Surveyor"
+     msg3="Successfully deleted Surveyor"
 
      // Creation of Surveyor
     clickOnSurveyor(){
@@ -67,6 +69,8 @@ export class SurveyorClass{
     }
     addNewSurveyor(){
         cy.xpath(this.add_NewSurveyor).click()
+        cy.contains(this.msg1).should('have.text','Successfully added Surveyor')
+        cy.log('Successfully added Surveyor')
     }
 
 
@@ -93,6 +97,8 @@ addBranch(add_branch){
 
 updateSurveyor(){
     cy.xpath(this.update_Surveyor).click()
+    cy.contains(this.msg2).should('have.text','Successfully updated Surveyor')
+        cy.log('Successfully updated Surveyor')
 }
 
 // Search for Surveyor
@@ -102,5 +108,7 @@ updateSurveyor(){
 deleteSurveyor(){
     cy.xpath(this.delete).click()
     cy.xpath(this.confirm_Delete).click()
+    cy.contains(this.msg3).should('have.text','Successfully deleted Surveyor')
+    cy.log('Successfully deleted Surveyor')
 }
 }

@@ -14,10 +14,12 @@ beforeEach(function(){
       loginPage.clickOnLogin()
 
       actionPage.clickOnActions()
-      actionPage.searchForId('1000024')
+      actionPage.searchForId('10000240')
       actionPage.assignTo('keerthi nayak')
       actionPage.allAction()
       // actionPage.dueAction()
+      
+
       actionPage.funOpen()
       actionPage.editAction()
       actionPage.enterMessage(' close')
@@ -26,14 +28,28 @@ beforeEach(function(){
       actionPage.ClickOnX()
       actionPage.closureMessage('close action')
       actionPage.closeAction()
+      actionPage.selectDate1()
+      actionPage.assignTo3('keerthi nayak')
+      actionPage.typeMessage1('Test1')
+      actionPage.save2()
+
       actionPage.close()
 
       actionPage.followUp()
-      actionPage.selectDate(27)
+      actionPage.selectDate()
       actionPage.assignTo2('keerthi nayak')
-      actionPage.typeMessage('Follow up')
-      actionPage.save()
+      actionPage.typeMessage('Test2')
+      actionPage.save2()
+     
+      
+
       actionPage.funOpen()
+      // actionPage.searchForId('10000240')
+      // actionPage.assignTo('keerthi nayak')
+      // actionPage.allAction()
+      actionPage.close()
+      actionPage.closure_msg()
+      // actionPage.assertion_msg('Follow up msg1')
 
 
      

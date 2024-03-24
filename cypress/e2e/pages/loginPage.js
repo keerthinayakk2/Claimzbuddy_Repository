@@ -16,6 +16,8 @@ export class LoginClass{
     clickOnLogin(){
         cy.log("Click on Login")
         cy.xpath(this.login).click()
+        cy.wait(2000)
+        cy.log("Successfully Logged In")
     }
 
 }

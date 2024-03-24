@@ -31,6 +31,9 @@ export class InsurerClass{
      delete="/html/body/div[1]/div/div/main/div/div/div[2]/div/div[1]/div[1]/div/table/tbody/tr[1]/td[7]/div/button[2]"
 	 confirm_Delete="/html/body/div[4]/div/div/div/div[2]/section/div[2]/div/button[2]/div/span"	
 
+     msg1="Successfully added Insurer"
+     msg2="Successfully updated Insurer"
+     msg3="Successfully deleted insurer"
 
      // Creation of Insurer
     clickOnInsurer(){
@@ -76,6 +79,8 @@ export class InsurerClass{
     }
     addNewInsurer(){
         cy.xpath(this.add_New_Insurer).click()
+        cy.contains(this.msg1).should('have.text','Successfully added Insurer')
+        cy.log('Successfully added Insurer')
     }
 
 
@@ -98,6 +103,8 @@ updateDesc(desc){
 
 updateInsurer(){
     cy.xpath(this.update_Insurer).click()
+    cy.contains(this.msg2).should('have.text','Successfully updated Insurer')
+    cy.log('Successfully updated Insurer')
 }
 
 // Search for Insurer
@@ -107,5 +114,7 @@ updateInsurer(){
 deleteInsurer(){
     cy.xpath(this.delete).click()
     cy.xpath(this.confirm_Delete).click()
+    cy.contains(this.msg3).should('have.text','Successfully deleted insurer')
+    cy.log('Successfully deleted insurer')
 }
 }

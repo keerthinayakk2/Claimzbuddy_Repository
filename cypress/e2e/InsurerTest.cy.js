@@ -16,19 +16,19 @@ beforeEach(function(){
 
       insurerPage.clickOnInsurer()
       insurerPage.clickOnAddInsurer()
-      insurerPage.enterName('Canara')
-      insurerPage.enterLastName('Canara Bank India')
+      insurerPage.enterName('Renuka')
+      insurerPage.enterLastName('Renuka Life Insurance')
       insurerPage.enterBranchOffice('Bengaluru')
-      insurerPage.enterEmail('canarabank@gmail.com')
+      insurerPage.enterEmail('keerthinayakk2@gmail.com')
       insurerPage.enterContact('8978678960')
       insurerPage.enterDesc('Test1234')
-      insurerPage.enterAdditionalEmail('canarabank02@gmail.com')
+      insurerPage.enterAdditionalEmail('keerthinayakk2@gmail.com')
       insurerPage.enterAdditionalContact('8976567898')
       insurerPage.addNewInsurer()
 
 // Search For Inusrer
 
-insurerPage.searchForInsurer('Canara Bank India')
+insurerPage.searchForInsurer('Renuka Life Insurance')
 
 // Update Inusrer
 
@@ -38,7 +38,7 @@ insurerPage.updateInsurer()
 
 // Search For Inusrer
 
-insurerPage.searchForInsurer('Canara Bank India')
+insurerPage.searchForInsurer('Renuka Life Insurance')
 
 
 // Delete Inusrer

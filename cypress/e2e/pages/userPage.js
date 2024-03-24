@@ -37,6 +37,10 @@ export class UserClass{
     delete="/html/body/div[1]/div/div/main/div/div/div[2]/div/div[1]/div[1]/div/table/tbody/tr/td[7]/div/button[2]"
     confirm_delete="/html/body/div[4]/div/div/div/div[2]/section/div[2]/div/button[2]/div/span"
 
+    msg1="Successfully added user"
+     msg2="Successfully updated user"
+     msg3="Successfully deleted user"
+
 // Creation of User
     clickOnUsers(){
         // cy.wait(5000)
@@ -79,6 +83,8 @@ export class UserClass{
     }
     addNewUser(){
         cy.xpath(this.add_new_user).click()
+        cy.contains(this.msg1).should('have.text','Successfully added user')
+    cy.log('Successfully added user')
     }
 
 
@@ -113,10 +119,13 @@ selectTypeOfUser(){
     cy.xpath(this.user_select).click()
     cy.wait(5000)
     cy.contains(this.type_of_user).click()
+    
 }
 
 updateUser(){
     cy.xpath(this.update_user).click()
+    cy.contains(this.msg2).should('have.text','Successfully updated user')
+    cy.log('Successfully updated user')
 }
 
 // Search for user
@@ -126,6 +135,8 @@ updateUser(){
 deleteUser(){
     cy.xpath(this.delete).click()
     cy.xpath(this.confirm_delete).click()
+    cy.contains(this.msg3).should('have.text','Successfully deleted user')
+    cy.log('Successfully deleted user')
 }
 
 }

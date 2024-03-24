@@ -7,14 +7,14 @@ beforeEach(function(){
   })
   
   describe('Notification test', () => {
-    it('Notofication', () => {
+    it('Notification', () => {
   
       loginPage.enterUserName('keerthi.nayak')
       loginPage.enterPassword('Keerthi@02')
       loginPage.clickOnLogin()
 
       notificationPage.clickOnNotification()
-      notificationPage.searchForId('10000247')
+      notificationPage.searchForId('10000257')
       notificationPage.mark()
       notificationPage.close()
       notificationPage.funOpen()

@@ -18,11 +18,11 @@ beforeEach(function(){
       userPage.clickOnAddUser()
       userPage.enterFirstName('Amitha')
       userPage.enterLastName('Nayak')
-      userPage.enterPrimaryEmail('abc@gmail.com')
+      userPage.enterPrimaryEmail('keerthinayakk2@gmail.com')
       userPage.enterUserName('amitha.nayak')
       userPage.enterPassword('test@123')
       userPage.selectUserRole()
-      userPage.enterAdditionalEmail('xyz@gmail.com')
+      userPage.enterAdditionalEmail('keerthinayakk2@gmail.com')
       userPage.enterAdditionalContact('8976567898')
       userPage.addNewUser()
 
@@ -35,7 +35,7 @@ userPage.searchForUser('amitha.nayak')
 // Update User
 
 userPage.clickOnUser()
-userPage.ClickOnEditEmail('amithanayak12@gmail.com')
+userPage.ClickOnEditEmail('keerthinayakk2@gmail.com')
 userPage.selectTypeOfUser()
 userPage.updateUser()
 
