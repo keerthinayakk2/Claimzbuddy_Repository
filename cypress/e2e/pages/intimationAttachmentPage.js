@@ -56,7 +56,7 @@ export class IntimationAttachmentClass{
 
     //Attaching
     attachFile(){
-        cy.xpath(this.attach_File).attachFile('screenshot.png')
+        cy.xpath(this.attach_File).attachFile('cypress/fixtures/screenshot.png')
         cy.wait(3000)
         cy.contains(this.assert_msg1).should('have.text','File has been successfully uploaded')
         cy.log('File has been successfully uploaded')

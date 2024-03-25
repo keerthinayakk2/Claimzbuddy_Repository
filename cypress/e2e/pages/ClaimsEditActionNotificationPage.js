@@ -20,7 +20,7 @@ export class ClaimsEditActionNotificationClass{
     action_Button='(//button[@class="mantine-UnstyledButton-root mantine-Tabs-tab mantine-h199wc"])'
     create_New_Action='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-12eef92"])'
     date_Time='(//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"])'
-    select_date='(//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[27]'
+    select_date='(//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[30]'
     assign_To='(//input[@class="mantine-Input-input mantine-Select-input mantine-kcpopt"])[8]'
     enter_Notification_Message='(//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"])[5]'
     save_Action='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-sa3oaj"])'

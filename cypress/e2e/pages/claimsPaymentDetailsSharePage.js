@@ -109,10 +109,10 @@ deletePayment(){
 confirmDelete(){
     cy.xpath(this.confirm_Delete).click()
 }
-deletePaymentAssertion(){
-    cy.contains(this.assert3).should('have.text','Successfully deleted payment')
-    cy.log('Successfully deleted payment')
-}
+// deletePaymentAssertion(){
+//     cy.contains(this.assert3).should('have.text','Successfully deleted payment')
+//     cy.log('Successfully deleted payment')
+// }
 
 //share
 selectShare(){

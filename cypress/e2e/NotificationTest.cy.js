@@ -14,7 +14,7 @@ beforeEach(function(){
       loginPage.clickOnLogin()
 
       notificationPage.clickOnNotification()
-      notificationPage.searchForId('10000257')
+      notificationPage.searchForId('10000279')
       notificationPage.mark()
       notificationPage.close()
       notificationPage.funOpen()
