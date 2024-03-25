@@ -1,5 +1,6 @@
 import { LoginClass } from './pages/loginPage'
 import { ClaimsCreationClass } from './pages/claimsCreationPage'
+// import {} from './fixtures/images/screenshot.png'
 const loginPage=new LoginClass()
 const claimsCreationPage=new ClaimsCreationClass()
 beforeEach(function(){
