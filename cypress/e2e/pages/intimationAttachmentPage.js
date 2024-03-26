@@ -69,7 +69,7 @@ export class IntimationAttachmentClass{
     }
     // sending file
     clickOnSend(){
-        cy.contains(this.send).invoke('show').click({ force: true })
+        cy.contains(this.send).invoke('show').click()
 
     }
 
