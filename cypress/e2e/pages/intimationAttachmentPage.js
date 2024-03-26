@@ -11,18 +11,18 @@ export class IntimationAttachmentClass{
     select_file='(//input[@type="checkbox"])[3]'
     
     //sending file
-    send='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-2qb4ys"])[1]'
+    send='(//button[@type="button"])[6]'
     to_Address='(//input[@type="search"])[9]'
     send_attachment='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-sa3oaj"]'
     assert_msg2='Successfully sent the files'
 
     //rejecting File
-    reject='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-2qb4ys"])[2]'
+    reject='(//button[@type="button"])[7]'
     assert_msg3='Successfully rejected the files'
 
     //requesting File
     select_File_Type='(//input[@type="checkbox"])[4]'
-    request='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-2qb4ys"])[3]'
+    request='(//button[@type="button"])[8]'
     assert_msg4='Successfully requested the files'
 
     //Downloading File
