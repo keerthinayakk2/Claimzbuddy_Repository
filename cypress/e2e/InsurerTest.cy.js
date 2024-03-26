@@ -8,7 +8,7 @@ beforeEach(function(){
   })
   
   describe('Insurer Test', () => {
-    it('Surveyor', () => {
+    it('Insurer', () => {
   
       loginPage.enterUserName('keerthi.nayak')
       loginPage.enterPassword('Keerthi@02')

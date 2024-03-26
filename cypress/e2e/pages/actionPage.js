@@ -25,7 +25,7 @@ export class ActionClass{
     follow_Up='(//span[@class="mantine-1ryt1ht mantine-Button-label"])[1]'
     select_Date='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[1]/div/button'
     select_Date1='//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"]'
-    date_selected='//button[@aria-label="27 March 2024"]'
+    date_selected='//button[@aria-label="28 March 2024"]'
     assign2='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[2]/div/div/input'
     assign3='(//input[@class="mantine-Input-input mantine-Select-input mantine-kcpopt"])[2]'
     msg2='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[3]/div/textarea'

@@ -8,7 +8,7 @@ beforeEach(function(){
     cy.visit('https://abccorp.dev.claimzbuddy.com/login')
   })
   
-  describe('Insured Test', () => {
+  describe('InsuredLogin Test', () => {
     it('Insured', () => {
   
       loginPage.enterUserName('keerthi.nayak')

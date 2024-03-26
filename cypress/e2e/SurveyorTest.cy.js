@@ -7,7 +7,7 @@ beforeEach(function(){
   })
   
   describe('Surveyor Test', () => {
-    it('Create New Surveyor', () => {
+    it('Surveyor', () => {
   
       loginPage.enterUserName('keerthi.nayak')
       loginPage.enterPassword('Keerthi@02')
