@@ -58,7 +58,7 @@ export class IntimationAttachmentClass{
     //Attaching
     attachFile(){
         cy.xpath(this.attach_File).attachFile("Screenshot.png")
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.contains(this.assert_msg1).should('have.text','File has been successfully uploaded')
         cy.log('File has been successfully uploaded')
     }
@@ -76,7 +76,7 @@ export class IntimationAttachmentClass{
     
     typeToAddress(address){
         // cy.xpath(this.to_Address).click()
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.xpath(this.to_Address).type(address).type('{downArrow}{enter}',{force: true})
     }
   
@@ -116,7 +116,7 @@ export class IntimationAttachmentClass{
     //Downloading File
     downloadFile(){
         cy.xpath(this.download_File).click()
-        cy.wait(3000)
+        // cy.wait(3000)
     }
     //Deleting File
     deleteFile(){
@@ -128,9 +128,9 @@ export class IntimationAttachmentClass{
     addNewAttachment(type){
         cy.xpath(this.add_New_Attachment).click()
         cy.xpath(this.add_Type).type(type,{force: true})
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.contains(this.save_Type).click()
-        cy.wait(3000)
+        // cy.wait(3000)
         
     }
     deleteNewAttachmentType(){
@@ -142,7 +142,7 @@ export class IntimationAttachmentClass{
 //sorting type
     clickOnSearch(searchType){
         cy.xpath(this.click_On_Search).type(searchType).type('{downArrow}{enter}')
-        cy.wait(2000)
+        // cy.wait(2000)
     }
     unselect(){
         cy.xpath(this.unselect1).click()

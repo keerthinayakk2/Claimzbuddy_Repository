@@ -175,7 +175,7 @@ searchForUser(searchuser){
 }
 
 logoutFromProfile(){
-    cy.wait(3000)
+    // cy.wait(3000)
     cy.xpath(this.profile).click()
     cy.contains(this.logout).click()
 }
@@ -217,7 +217,7 @@ submitPassword()
         cy.xpath(this.date).click()
         cy.contains(this.date_select).click().type(date_Time).click()
 
-        cy.wait(2000)
+        // cy.wait(2000)
         cy.xpath(this.select_Date).click()
     }
     selectCause(){
@@ -255,7 +255,7 @@ submitPassword()
     goToAttachments(){
         cy.contains(this.attachments).click()
         cy.xpath(this.attach_File).attachFile('Screenshot.png')
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.contains(this.assert_msg5).should('have.text','File has been successfully uploaded')
         cy.log('File has been successfully uploaded')
     }
@@ -302,7 +302,7 @@ submitPassword()
     }
     createPolicy(){
         cy.xpath(this.create_New_Policy).click()
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.contains(this.assert_msg1).should('have.text','Successfully added Insured')
         cy.log('Successfully added Insured')
     }
@@ -314,7 +314,7 @@ submitPassword()
     //     cy.xpath(this.insurer_Select).type(select_type).type('{downArrow}{enter}')
     // }
     selectOccupancy(select_Occupancy){
-        cy.wait(3000)
+        // cy.wait(3000)
         cy.xpath(this.occupancy).type(select_Occupancy).type('{downArrow}{enter}')
     }
     converToClaim(){
