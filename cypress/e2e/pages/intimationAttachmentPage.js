@@ -9,6 +9,7 @@ export class IntimationAttachmentClass{
     attach_File='(//input[@type="file"])[1]'
     assert_msg1='File has been successfully uploaded'
     select_file='(//input[@type="checkbox"])[3]'
+    
     //sending file
     send='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-2qb4ys"])[1]'
     to_Address='(//input[@type="search"])[9]'
@@ -56,7 +57,7 @@ export class IntimationAttachmentClass{
 
     //Attaching
     attachFile(){
-        cy.xpath(this.attach_File).attachFile("images/screenshot.png")
+        cy.xpath(this.attach_File).attachFile("Screenshot.png")
         cy.wait(3000)
         cy.contains(this.assert_msg1).should('have.text','File has been successfully uploaded')
         cy.log('File has been successfully uploaded')

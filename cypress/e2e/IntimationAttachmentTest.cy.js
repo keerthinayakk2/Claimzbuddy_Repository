@@ -20,7 +20,8 @@ beforeEach(function(){
      intimationAttachmentPage.editIntimation()
     //Attaching
      intimationAttachmentPage.goToAttachments()
-     intimationAttachmentPage.attachFile()
+     const image='Screenshot.png'
+     intimationAttachmentPage.attachFile(image)
       intimationAttachmentPage.fileSelection()
      //sending file
      intimationAttachmentPage.clickOnSend()

@@ -1,4 +1,4 @@
-import 'cypress-fileupload';
+import 'cypress-file-upload';
 
 // ***********************************************
 // This example commands.js shows you how to

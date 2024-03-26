@@ -254,7 +254,7 @@ submitPassword()
     }
     goToAttachments(){
         cy.contains(this.attachments).click()
-        cy.xpath(this.attach_File).attachFile('images/screenshot.png')
+        cy.xpath(this.attach_File).attachFile('Screenshot.png')
         cy.wait(3000)
         cy.contains(this.assert_msg5).should('have.text','File has been successfully uploaded')
         cy.log('File has been successfully uploaded')
