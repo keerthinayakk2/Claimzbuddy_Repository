@@ -11,18 +11,18 @@ export class IntimationAttachmentClass{
     select_file='(//input[@type="checkbox"])[3]'
     
     //sending file
-    send='(//button[@type="button"])[6]'
+    send='Send'
     to_Address='(//input[@type="search"])[9]'
     send_attachment='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-sa3oaj"]'
     assert_msg2='Successfully sent the files'
 
     //rejecting File
-    reject='(//button[@type="button"])[7]'
+    reject='Reject'
     assert_msg3='Successfully rejected the files'
 
     //requesting File
     select_File_Type='(//input[@type="checkbox"])[4]'
-    request='(//button[@type="button"])[8]'
+    request='Request'
     assert_msg4='Successfully requested the files'
 
     //Downloading File
@@ -69,7 +69,7 @@ export class IntimationAttachmentClass{
     }
     // sending file
     clickOnSend(){
-        cy.xpath(this.send).click()
+        cy.contains(this.send).click()
 
     }
 
@@ -95,7 +95,7 @@ export class IntimationAttachmentClass{
 
     //Rejecting file
     clickOnReject(){
-        cy.xpath(this.reject).click()
+        cy.contains(this.reject).click()
     }
     reject_assertion(){
         cy.contains(this.assert_msg3).should('have.text','Successfully rejected the files')
@@ -106,7 +106,7 @@ export class IntimationAttachmentClass{
     //Requesting File
     requestFile(){
         cy.xpath(this.select_File_Type).click()
-        cy.xpath(this.request).click()
+        cy.contains(this.request).click()
     }
     request_assertion(){
         cy.contains(this.assert_msg4).should('have.text','Successfully requested the files')
