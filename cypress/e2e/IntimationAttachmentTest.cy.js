@@ -51,11 +51,11 @@ beforeEach(function(){
   intimationAttachmentPage.addNewAttachment('New type')
 
   //Sorting Type
-  intimationAttachmentPage.clickOnSearch('FIR')
-  intimationAttachmentPage.clickOnSearch('Photographs')
+  // intimationAttachmentPage.clickOnSearch('FIR')
+  // intimationAttachmentPage.clickOnSearch('Photographs')
   intimationAttachmentPage.clickOnSearch('Policy')
   intimationAttachmentPage.unselect()
-  intimationAttachmentPage.unselect()
-  intimationAttachmentPage.unselect()
+  // intimationAttachmentPage.unselect()
+  // intimationAttachmentPage.unselect()
     })
   })
