@@ -16,7 +16,7 @@ export class ClaimsPolicyDetailsClass{
     sum_Assured2='(//input[@class="mantine-Input-input mantine-TextInput-input mantine-gszoqu"])[11]'
     insured_Property2='(//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"])[7]'
     remarks2='(//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"])[8]'
-    delete='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-18pc0xv"])[2]'
+    delete='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-18pc0xv"])[1]'
 
     selectClaim(){
         cy.xpath(this.claim_Select).click()
@@ -43,6 +43,7 @@ export class ClaimsPolicyDetailsClass{
     }
 
     expandIcon(){
+        cy.scrollTo('bottom')
         cy.xpath(this.expand).click()
     }
     sumAssured(sum){
