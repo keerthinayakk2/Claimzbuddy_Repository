@@ -12,7 +12,7 @@ export class IntimationAttachmentClass{
     
     //sending file
     send='Send'
-    to_Address='(//input[@type="search"])[9]'
+    to_Address='(//input[@placeholder="Select To Email Address"])'
     send_attachment='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-sa3oaj"]'
     assert_msg2='Successfully sent the files'
 
