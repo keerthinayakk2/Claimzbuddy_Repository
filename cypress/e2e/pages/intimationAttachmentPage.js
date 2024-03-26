@@ -69,7 +69,7 @@ export class IntimationAttachmentClass{
     }
     // sending file
     clickOnSend(){
-        cy.contains(this.send).click()
+        cy.contains(this.send).invoke('show').click({ force: true })
 
     }
 
@@ -95,7 +95,7 @@ export class IntimationAttachmentClass{
 
     //Rejecting file
     clickOnReject(){
-        cy.contains(this.reject).click()
+        cy.contains(this.reject).invoke('show').click({ force: true })
     }
     reject_assertion(){
         cy.contains(this.assert_msg3).should('have.text','Successfully rejected the files')
@@ -106,7 +106,7 @@ export class IntimationAttachmentClass{
     //Requesting File
     requestFile(){
         cy.xpath(this.select_File_Type).click()
-        cy.contains(this.request).click()
+        cy.contains(this.request).invoke('show').click({ force: true })
     }
     request_assertion(){
         cy.contains(this.assert_msg4).should('have.text','Successfully requested the files')
