@@ -71,7 +71,7 @@ export class ReviewClass{
 
     //Submitting Review
     submitReview(){
-        cy.contains(this.submit_Review).click()
+        cy.contains(this.submit_Review).click({force:true})
     }
     selectDuration(duration){
         cy.xpath(this.review_Duration).click().type('{downArrow}{downArrow}{enter}',{force:true})
