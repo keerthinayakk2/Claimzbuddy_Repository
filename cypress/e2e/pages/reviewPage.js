@@ -19,7 +19,7 @@ export class ReviewClass{
 
 //submitting review
 
-    submit_Review='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1uxpwz7"]'
+    submit_Review='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1uxpwz7"])[1]'
     review_Duration='(//input[@class="mantine-Input-input mantine-Select-input mantine-1cn2mlo"])[2]'
     submit='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1h3zql2"]'
     mail_Address='(//input[@class="mantine-MultiSelect-searchInput mantine-MultiSelect-searchInputEmpty mantine-1t7zc7a"])[1]'
