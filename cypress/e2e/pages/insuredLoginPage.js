@@ -47,7 +47,7 @@ export class InsuredLoginClass{
     description='(//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"])[2]'
     contact_Details='(//input[@class="mantine-Input-input mantine-Select-input mantine-kcpopt"])[3]'
     contact_Person_Location='(//input[@class="mantine-Input-input mantine-TextInput-input mantine-gszoqu"])[3]'
-    contact_Person_Number='(//input[@class="mantine-Input-input mantine-TextInput-input mantine-gszoqu"])[5]'
+    contact_Person_Number='(//input[@class="mantine-Input-input mantine-TextInput-input mantine-gszoqu"])[4]'
 	location='(//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"])[3]'
     assert_msg4='Successfully created proposal'
     edit_inti='/html/body/div[1]/div/div/main/div/div/div[2]/div/div[1]/div[1]/div/table/tbody/tr/td[14]/div/a/button'
