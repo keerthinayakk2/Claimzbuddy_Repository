@@ -19,7 +19,7 @@ export class ReviewClass{
 
 //submitting review
 
-    submit_Review='(//span[@class="mantine-1ryt1ht mantine-Button-label"])[1]'
+    submit_Review='Submit Review'
     review_Duration='(//input[@class="mantine-Input-input mantine-Select-input mantine-1cn2mlo"])[2]'
     submit='//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1h3zql2"]'
     mail_Address='(//input[@class="mantine-MultiSelect-searchInput mantine-MultiSelect-searchInputEmpty mantine-1t7zc7a"])[1]'
@@ -71,7 +71,7 @@ export class ReviewClass{
 
     //Submitting Review
     submitReview(){
-        cy.xpath(this.submit_Review).click()
+        cy.contains(this.submit_Review).click()
     }
     selectDuration(duration){
         cy.xpath(this.review_Duration).click().type('{downArrow}{downArrow}{enter}',{force:true})
