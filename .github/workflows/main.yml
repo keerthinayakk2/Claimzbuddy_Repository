@@ -10,5 +10,5 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npx cypress run --spec "cypress/e2e/InsuredLoginTest"
+         command: npx cypress run --spec "e2e/InsuredLoginTest"
          browser: chrome
