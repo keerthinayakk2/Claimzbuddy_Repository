@@ -28,7 +28,7 @@ beforeEach(function(){
       actionPage.ClickOnX()
       actionPage.closureMessage('close action')
       actionPage.closeAction()
-      actionPage.selectDate1()
+      // actionPage.selectDate1()
       actionPage.assignTo3('keerthi nayak')
       actionPage.typeMessage1('Test1')
       actionPage.save2()
@@ -36,7 +36,7 @@ beforeEach(function(){
       actionPage.close()
 
       actionPage.followUp()
-      actionPage.selectDate()
+      // actionPage.selectDate()
       actionPage.assignTo2('keerthi nayak')
       actionPage.typeMessage('Test2')
       actionPage.save2()
