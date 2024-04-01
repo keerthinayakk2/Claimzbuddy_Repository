@@ -17,10 +17,10 @@ beforeEach(function(){
 
       intimationCreationPage.clickOnIntimation()
       intimationCreationPage.createIntimation()
-      intimationCreationPage.selectInsured('Apoorva Vasishta')
-      intimationCreationPage.policyDetails('811990')
+      intimationCreationPage.selectInsured('Pooja K')
+      intimationCreationPage.policyDetails('81007')
     
-      insuredLoginPage.enterPolicyNum('811990')
+      insuredLoginPage.enterPolicyNum('81007')
       insuredLoginPage.enterPolicyType('ALL RISK POLICY')
       insuredLoginPage.selectInsurer('HDFC')
       // insuredLoginPage.selectPolicyHolder('Karunya Rao')
@@ -30,7 +30,7 @@ beforeEach(function(){
       insuredLoginPage.selectEndtDate('29-feb-2024')
       insuredLoginPage.selectDuration('28')
       insuredLoginPage.createPolicy()
-      intimationCreationPage.policyDetails('811990')
+      intimationCreationPage.policyDetails('81007')
       // insuredLoginPage.enterPolicyDetails('8899')
       // insuredLoginPage.insurerSelect('HDFC')
       insuredLoginPage.selectOccupancy('Construction')

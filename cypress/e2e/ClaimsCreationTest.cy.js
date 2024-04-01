@@ -17,7 +17,7 @@ beforeEach(function(){
 
         claimsCreationPage.clickOnClaims()
         claimsCreationPage.createClaim()
-        claimsCreationPage.selectInsured('Apoorva Vasishta')
+        claimsCreationPage.selectInsured('Ankitha Naik')
         claimsCreationPage.selectInsurer('HDFC Insurer')
         claimsCreationPage.selectPolicy()
         claimsCreationPage.selectSurveyor('Max LLP')
