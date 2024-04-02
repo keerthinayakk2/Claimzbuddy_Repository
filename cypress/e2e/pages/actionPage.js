@@ -19,13 +19,14 @@ export class ActionClass{
     checkbox='Create'
     followup_Action='/html/body/div[4]/div/div/div/div[2]/section/div[2]/div[2]/div/div[1]/input'
     close_action='//span[@class="mantine-1ryt1ht mantine-Button-label"]'
-    assert_msg1='Successfully created a followup action'
+    assert_msg1='Successfully updated the action'
+    assert_msg2='Successfully created a followup action'
     //followup action
     closed='/html/body/div[1]/div/div/main/div/div/div[1]/div[2]/div/div[2]/div/div[1]/input'
     follow_Up='(//span[@class="mantine-1ryt1ht mantine-Button-label"])[1]'
-    select_Date='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[1]/div/button'
+    select_Date='//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"]'
     select_Date1='//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"]'
-    date_selected='//button[@aria-label="01 April 2024"]'
+    date_selected='(//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[2]'
     assign2='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[2]/div/div/input'
     assign3='(//input[@class="mantine-Input-input mantine-Select-input mantine-kcpopt"])[2]'
     msg2='/html/body/div[4]/div/div/div/div[2]/section/div[2]/form/div[3]/div/textarea'
@@ -76,8 +77,8 @@ export class ActionClass{
     save(){
         cy.contains(this.save_Action).click()
         cy.wait(3000)
-        cy.contains(this.assert_msg1).should('have.text','Successfully created a followup action')
-        cy.log('Successfully created a followup action')
+        cy.contains(this.assert_msg1).should('have.text','Successfully updated the action')
+        cy.log('Successfully updated the action')
     }
     save1(){
         cy.contains(this.save_Action).click()
@@ -87,7 +88,7 @@ export class ActionClass{
     save2(){
         cy.contains(this.save_Action).click()
         cy.wait(3000)
-        cy.contains(this.assert_msg1).should('have.text','Successfully created a followup action')
+        cy.contains(this.assert_msg2).should('have.text','Successfully created a followup action')
         cy.log('Successfully created a followup action')
     }
     //Close action

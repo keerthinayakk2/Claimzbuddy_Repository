@@ -98,7 +98,7 @@ export class ClaimsEditActionNotificationClass{
         cy.xpath(this.save_Action).click()
         cy.contains(this.assert1).should('have.text','Successfully added new action')
         cy.log('Successfully added new action')
-        cy.xpath(this.close_Action).click()
+        cy.xpath(this.close_Action).click({force:true})
         cy.xpath(this.closure_msg).type(closure)
         cy.xpath(this.close).click()
         cy.wait(2000)
