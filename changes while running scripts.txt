@@ -6,3 +6,5 @@ Actions Test- change searchforId num and change select_Date (//button[@class="ma
 
 ClaimsEditAction Notification - (//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[30] change [30] to current date while running
 
+ClaimsTimelinePage- (//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[2] change [2] to date when you are testing
+

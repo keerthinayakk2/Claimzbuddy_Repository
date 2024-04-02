@@ -4,7 +4,7 @@ export class ClaimsTimelineClass{
     timeline='(//button[@class="mantine-UnstyledButton-root mantine-Tabs-tab mantine-1cwk9zn"])[4]'
     date_Of_Incident='(//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"])[1]'
     select_Date='//div[@class="mantine-Popover-dropdown mantine-1sd8r2y"]'
-    date_select='(//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[25]'
+    date_select='(//button[@class="mantine-UnstyledButton-root mantine-Day-day mantine-DatePickerInput-day mantine-7yisjr"])[2]'
     date_Of_Intimation='(//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"])[2]'
     date_of_Intimation_Insurer='(//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"])[2]'
     date_Of_Surveyor='(//button[@class="mantine-DatePickerInput-input mantine-Input-input mantine-DatePickerInput-input mantine-1e6hn20"])[3]'
