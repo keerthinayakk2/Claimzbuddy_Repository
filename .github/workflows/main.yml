@@ -10,5 +10,5 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npx cypress run --spec 'cypress/e2e/ActionsTest.cy.js'
+         command: npx cypress run --spec 'cypress/e2e/ClaimsEditActionNotificationTest.cy.js'
          browser: chrome
