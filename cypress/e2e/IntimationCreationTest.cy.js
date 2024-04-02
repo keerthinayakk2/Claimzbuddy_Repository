@@ -17,7 +17,7 @@ beforeEach(function(){
 
       intimationCreationPage.clickOnIntimation()
       intimationCreationPage.createIntimation()
-      intimationCreationPage.selectInsured('Pooja K')
+      intimationCreationPage.selectInsured('Apoorva Vasishta')
       intimationCreationPage.policyDetails('81007')
     
       insuredLoginPage.enterPolicyNum('81007')
