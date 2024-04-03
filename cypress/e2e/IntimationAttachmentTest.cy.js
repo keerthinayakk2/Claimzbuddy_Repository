@@ -50,6 +50,7 @@ beforeEach(function(){
 
   //Adding New attachment type
   intimationAttachmentPage.addNewAttachment('New type')
+  intimationAttachmentPage.deleteNewAttachmentType()
 
   //Sorting Type
   // intimationAttachmentPage.clickOnSearch('FIR')

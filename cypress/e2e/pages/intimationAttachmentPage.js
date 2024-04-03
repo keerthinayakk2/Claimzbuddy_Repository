@@ -8,7 +8,7 @@ export class IntimationAttachmentClass{
     //Attaching
     attach_File='(//input[@type="file"])[1]'
     assert_msg1='File has been successfully uploaded'
-    select_file='(//input[@type="checkbox"])[3]'
+    select_file='(//input[@class="mantine-1hwwzh4 mantine-Checkbox-input"])[1]'
     
     //sending file
     send='Send'

@@ -10,3 +10,5 @@ ClaimsTimelinePage- (//button[@class="mantine-UnstyledButton-root mantine-Day-da
 
 Insured Login - change insured name and policy num
 
+
+IntimationCreationTest - change policy number
