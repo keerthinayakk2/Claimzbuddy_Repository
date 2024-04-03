@@ -7,7 +7,7 @@ export class ReviewClass{
     claim_Age='//input[@class="mantine-Input-input mantine-Select-input mantine-1cn2mlo"]'
     all='(//input[@class="mantine-1cu6yj8 mantine-Radio-radio"])[1]'
     reviewed='(//input[@class="mantine-1cu6yj8 mantine-Radio-radio"])[2]'
-    review='(//span[@class="mantine-1ryt1ht mantine-Button-label"])[3]'
+    review='(//span[@class="mantine-1ryt1ht mantine-Button-label"])[2]'
     review_Message='//textarea[@class="mantine-Input-input mantine-Textarea-input mantine-1ix1d88"]'
     assign_To='(//input[@class="mantine-Input-input mantine-Select-input mantine-1cn2mlo"])[2]'
     scroll='(//div[@class="mantine-1qj7q0z mantine-Input-rightSection mantine-Select-rightSection"])[2]'
