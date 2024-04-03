@@ -12,3 +12,5 @@ Insured Login - change insured name and policy num
 
 
 IntimationCreationTest - change policy number
+
+Notification test- change num based on notification or create notification in claims and add that num
