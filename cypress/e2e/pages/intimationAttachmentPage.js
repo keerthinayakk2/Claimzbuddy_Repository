@@ -8,7 +8,7 @@ export class IntimationAttachmentClass{
     //Attaching
     attach_File='(//input[@type="file"])[1]'
     assert_msg1='File has been successfully uploaded'
-    select_file='(//input[@type="checkbox"])[3]'
+    select_file='(//input[@type="checkbox"])[2]'
     
     //sending file
     send='Send'
@@ -33,7 +33,7 @@ export class IntimationAttachmentClass{
 
     //Adding and deleting new attachment type
     add_New_Attachment='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-hm5rmx"])[1]'
-    add_Type='//input[@placeholder="Enter Attchment Type"]'
+    add_Type='//input[@placeholder="Enter Attachment Type"]'
     save_Type='Save Attachment Type'
     delete_Type='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-lsayhv"])[1]'
     confirm_Delete_Type='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1l70tev"])[1]'

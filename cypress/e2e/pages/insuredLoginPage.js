@@ -78,6 +78,7 @@ export class InsuredLoginClass{
 
     convert_Claim='Convert to Claim'
     assert_msg6='Successfully converted proposal'
+    assert_msg7='Successfully added policy'
     //logout again
     //login as insured user
 
@@ -303,8 +304,8 @@ submitPassword()
     createPolicy(){
         cy.xpath(this.create_New_Policy).click()
         // cy.wait(3000)
-        cy.contains(this.assert_msg1).should('have.text','Successfully added Insured')
-        cy.log('Successfully added Insured')
+        cy.contains(this.assert_msg1).should('have.text','Successfully added policy')
+        cy.log('Successfully added policy')
     }
     // enterPolicyDetails(detailsPolicy){
     //     cy.wait(3000)
