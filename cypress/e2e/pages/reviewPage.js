@@ -41,13 +41,13 @@ export class ReviewClass{
         cy.contains(age).click()
     }
     selectAll(){
-        cy.xpath(this.all).click()
+        cy.xpath(this.all).click().scrollTo('right',{ensureScrollable: false})
     }
     reviewAll(){
-        cy.xpath(this.reviewed).click()
+        cy.xpath(this.reviewed).click({force:true})
     }
     reviewClick(){
-        cy.xpath(this.review).click()
+        cy.xpath(this.review).click({force:true})
     }
     reviewMessage(msg){
         cy.xpath(this.review_Message).type(msg)
