@@ -304,7 +304,7 @@ submitPassword()
     createPolicy(){
         cy.xpath(this.create_New_Policy).click()
         // cy.wait(3000)
-        cy.contains(this.assert_msg1).should('have.text','Successfully added policy')
+        cy.contains(this.assert_msg7).should('have.text','Successfully added policy')
         cy.log('Successfully added policy')
     }
     // enterPolicyDetails(detailsPolicy){
