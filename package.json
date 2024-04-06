@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest":"rm -r ./cypress/reports/*.json",
     "test": "npm run cypress-test || npm run posttest",
     "cypress-test": "cypress run",
     "posttest": "npm run merge-reports && npm run generate-htmlreport",
