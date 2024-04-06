@@ -1,0 +1,57 @@
+npx cypress open   --- To open script in chrome browser
+npx cypress run    -- Runs all scripts in headless browser
+npx cypress run --spec 'cypress/e2e/ClaimsCreationTest.cy.js'  --- Runs only the ClaimsCreationTest script
+
+To run Scripts in Github
+Create .github\workflows folder and add main.yml file
+
+name: Cypress Tests
+on: [push]
+jobs:
+ Cypress-Test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout GitCode
+       uses: actions/checkout@v2
+ 
+     - name: Run Cypress Test
+       uses: cypress-io/github-action@v4
+       with:
+         command: npx cypress run 
+        #  --spec 'cypress/e2e/ClaimsTimelineTest.cy.js'
+         browser: chrome
+
+command: is used to add the script you want to run, to run specific file script write -- 
+
+npx cypress run --spec 'cypress/e2e/ClaimsCreationTest.cy.js'
+
+To use xpath library use the below command to install the library in the VsCode terminal--
+
+
+To use attachFile library use the below command to install the library in the VsCode terminal--
+
+
+For report generation use the below command to install the library in the VsCode terminal--
+
+npm install mochawesome-report-generator
+npm i mochawesome-merge 
+npm i mochawesome
+
+Add configuraion in cypress.config.json file add the below lines
+
+"reporter":"mochawesome",
+    "reporterOptions":{
+      "charts":true,
+      "overwrite":false,
+      "html":false,
+      "json":true,
+      "reportDir":"cypress/reports"
+
+    },
+
+To run a file to generate report--
+npx cypress run --spec  'cypress/e2e/ClaimsDownloadExpandTest.cy.js' --reporter mochawesome
+
+    rm -r ./cypress/reports/*.json
+
+
