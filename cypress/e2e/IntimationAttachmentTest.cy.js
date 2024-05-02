@@ -1,9 +1,9 @@
 import {LoginClass} from "./pages/loginPage"
 import { IntimationAttachmentClass } from "./pages/intimationAttachmentPage"
-import { IntimationCreationClass } from "./pages/intimationCreationPage"
+import { ClaimsAttachmentsClass} from "./pages/claimsAttachmentsPage"
 const loginPage=new LoginClass()
 const intimationAttachmentPage=new IntimationAttachmentClass()
-
+const claimsAttachmentPage=new ClaimsAttachmentsClass()
 beforeEach(function(){
     cy.visit('https://abccorp.dev.claimzbuddy.com/login')
   })
@@ -46,6 +46,7 @@ beforeEach(function(){
   //deleting attachment
   intimationAttachmentPage.attachFile()
   intimationAttachmentPage.downloadFile()
+  claimsAttachmentPage.previewAttachment()
   intimationAttachmentPage.deleteFile()
 
   //Adding New attachment type

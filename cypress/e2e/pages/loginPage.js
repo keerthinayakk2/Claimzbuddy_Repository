@@ -1,8 +1,8 @@
 export class LoginClass{
 
-    userName='/html/body/div[1]/div/div/form/div[1]/div/input'
-    password='/html/body/div[1]/div/div/form/div[2]/div/div[1]/input'
-    login='/html/body/div[1]/div/div/form/button/div'
+    userName='(//input[@class="mantine-Input-input mantine-TextInput-input mantine-gszoqu"])[1]'
+    password='(//input[@class="mantine-15vtssg mantine-PasswordInput-innerInput"])[1]'
+    login='(//div[@class="mantine-1wpc1xj mantine-Button-inner"])[1]'
 
     enterUserName(username){
         cy.log("Enter User name")

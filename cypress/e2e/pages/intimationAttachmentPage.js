@@ -26,7 +26,7 @@ export class IntimationAttachmentClass{
     assert_msg4='Successfully requested the files'
 
     //Downloading File
-    download_File='//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-uin1f8"]'
+    download_File='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-uin1f8"])[1]'
     //deleting file
     delete_File='(//button[@class="mantine-UnstyledButton-root mantine-ActionIcon-root mantine-3vmpkb"])[1]'
     confirm_Delete='(//button[@class="mantine-UnstyledButton-root mantine-Button-root mantine-1l70tev"])[1]'

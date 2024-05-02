@@ -1,0 +1,3 @@
+https://spectrum-adv.dev.claimzbuddy.com/claims
+
+password: test1234
